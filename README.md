@@ -17,13 +17,9 @@ lib/
 ├── home_screen.dart
 ├── counter_app.dart
 ├── simple_todo.dart
-├── task-main_screen.dart
+├── main_screen.dart
 ├── task_screen.dart
 └── completed_task_screen.dart
-
-markdown
-Copy code
-
 ---
 
 ## 🟦 Week 1: Basic Flutter Development & UI Building
