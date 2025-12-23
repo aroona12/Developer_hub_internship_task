@@ -1,18 +1,15 @@
----
 # Developer Hub Flutter Tasks (Week 1–3)
 
 ## 📱 Project Overview
 This Flutter project is developed as part of **Developer Hub tasks**, covering **Week 1 to Week 3** objectives.  
-All tasks are implemented within **a single Flutter project**, where each week focuses on building upon the previous concepts, resulting in a **functional task management application** with clean and enhanced UI.
+All weekly tasks are implemented within **a single Flutter project**, where each phase builds upon previously learned concepts, resulting in a **fully functional task management application** with clean and enhanced UI.
 
-The project demonstrates fundamental to intermediate Flutter concepts including UI design, navigation, state management, and local data persistence.
+The project demonstrates practical understanding of Flutter fundamentals including UI design, navigation, state management, and local data persistence using `SharedPreferences`.
 
 ---
 
 ## 🗂 Project Structure
-The project contains multiple screens and modules corresponding to each week’s tasks:
-
-```
+The project consists of multiple screens corresponding to each task phase:
 
 lib/
 ├── main.dart
@@ -20,9 +17,12 @@ lib/
 ├── home_screen.dart
 ├── counter_app.dart
 ├── simple_todo.dart
-└── final_task_app.dart
+├── task-main_screen.dart
+├── task_screen.dart
+└── completed_task_screen.dart
 
-````
+markdown
+Copy code
 
 ---
 
@@ -30,18 +30,18 @@ lib/
 
 ### 🔹 Learning Focus
 - Flutter project structure
-- UI building using core widgets
-- Navigation between screens
+- UI development using core widgets
+- Screen navigation
 - Form validation
 
 ### 🔹 Implemented Features
 - Login screen with:
-  - Email & password fields
+  - Email and password input fields
   - Input validation
   - Login button
   - “Forgot Password?” text
 - Navigation from Login Screen to Home Screen using `Navigator.push()`
-- Clean and responsive UI using:
+- Responsive UI using:
   - `Column`, `Row`, `Container`, `Card`, `TextFormField`
 
 ---
@@ -51,36 +51,57 @@ lib/
 ### 🔹 Learning Focus
 - Widget state management using `setState`
 - Local data persistence
-- Working with lists
+- List rendering
 
 ### 🔹 Implemented Features
 #### ✅ Counter App
-- Increment & decrement counter
-- Counter value saved using `SharedPreferences`
-- Data persists even after app restart
+- Increment and decrement counter
+- Counter value stored using `SharedPreferences`
+- Value persists after app restart
 
 #### ✅ Simple To-Do App
 - Add tasks
 - Display tasks using `ListView`
-- Save and retrieve tasks using `SharedPreferences`
+- Store tasks locally using `SharedPreferences`
 
 ---
 
-## 🟦 Week 3: Final Task Management App
+## 🟦 Week 3: Final Task Management Application
 
 ### 🔹 Learning Focus
-- Combining multiple Flutter concepts
-- UI enhancement
-- Debugging and testing
+- Integrating multiple Flutter concepts into one app
+- Data persistence
+- UI enhancement and navigation
+- Testing and debugging
 
 ### 🔹 Final App Features
-- Home screen displaying task list
-- Add new tasks via dialog
-- Mark tasks as complete
-- Delete tasks
-- Persistent storage using `SharedPreferences`
-- Custom AppBar with action buttons
-- Icons for better user experience
+- **Main Task Screen**
+  - Displays all tasks with title, date, and availability level
+  - Dynamic task count shown in the AppBar
+  - Checkbox to mark tasks as completed
+  - Delete task with confirmation dialog
+
+- **Add / Update Task Screen**
+  - Add new tasks with:
+    - Title
+    - Date selection using DatePicker
+    - Availability level (High, Medium, Low)
+  - Update existing tasks
+  - Input validation with Snackbar feedback
+
+- **Completed Tasks Screen**
+  - Separate screen to display completed tasks only
+  - Completed tasks shown with strike-through text
+  - Data retrieved from persistent storage
+
+- **Data Persistence**
+  - All task data stored locally using `SharedPreferences`
+  - Task completion state maintained across app restarts
+
+- **UI Enhancements**
+  - Custom AppBar
+  - Floating Action Button for adding tasks
+  - Icons and cards for improved user experience
 
 ---
 
@@ -88,7 +109,7 @@ lib/
 - Flutter (Stable Channel)
 - Dart
 - SharedPreferences
-- Material UI Widgets
+- Material Design Widgets
 
 ---
 
@@ -98,6 +119,4 @@ lib/
    ```bash
    flutter pub get
    flutter run
-````
-
-
+3. Ensure an Android device or emulator is connected
