@@ -11,7 +11,8 @@ The project demonstrates practical understanding of Flutter fundamentals includi
 ## 🗂 Project Structure
 The project consists of multiple screens corresponding to each task phase:
 
-lib/
+lib
+│
 ├── main.dart
 ├── login_screen.dart
 ├── home_screen.dart
