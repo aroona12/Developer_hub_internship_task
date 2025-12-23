@@ -11,16 +11,16 @@ The project demonstrates practical understanding of Flutter fundamentals includi
 ## 🗂 Project Structure
 The project consists of multiple screens corresponding to each task phase:
 
-lib
-│
-├── main.dart
-├── login_screen.dart
-├── home_screen.dart
-├── counter_app.dart
-├── simple_todo.dart
-├── main_screen.dart
-├── task_screen.dart
-└── completed_task_screen.dart
+**lib/**
+- main.dart
+- login_screen.dart
+- home_screen.dart
+- counter_app.dart
+- simple_todo.dart
+- main_screen.dart
+- task_screen.dart
+- completed_task_screen.dart
+
 ---
 
 ## 🟦 Week 1: Basic Flutter Development & UI Building
